@@ -1,10 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace ProjetGenetique.Genetique
+namespace ProjetGenetique.Genetic
 {
     class Person
     {
@@ -12,11 +8,11 @@ namespace ProjetGenetique.Genetique
         private int    _fitness;
         private int[]  _notes;
         
-        public Person(int nbNotes, int randomInstrument = 0)
+        public Person(int nbNote, int randomInstrument = 0)
         {
             _instrument = randomInstrument;
-            _fitness = 0;
-            _notes = new int[nbNotes];
+            _fitness    = 0;
+            _notes      = new int[nbNote];
         }
 
         public int instrument { get; set; }
@@ -27,10 +23,11 @@ namespace ProjetGenetique.Genetique
         public int fitness { get; set; }
 
         //generate a random song
-        public void generateRandomNotes(Random random)
+        public void generateRandomNotes()
         {
-            for(int i = 0; i < _notes.Length; i++)
-            {
+            Random random = new Random();
+
+            for (int i = 0; i < _notes.Length; i++){
                 _notes[i] = random.Next(0, 128);
             }
         }

@@ -53,8 +53,8 @@
     <Compile Include="GenerationMIDI\MIDISong.cs" />
     <Compile Include="GenerationMIDI\MIDITrack.cs" />
     <Compile Include="GenerationMIDI\VariableLength.cs" />
-    <Compile Include="Genetique\Person.cs" />
-    <Compile Include="Genetique\Population.cs" />
+    <Compile Include="Genetic\Person.cs" />
+    <Compile Include="Genetic\Population.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
