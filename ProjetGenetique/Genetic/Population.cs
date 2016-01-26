@@ -13,7 +13,41 @@ namespace ProjetGenetique.Genetic
         private double _mutationRate;
 
         //get access to the person list from the UI
-        public Person[] persons { get; set; }
+        public Person[] persons
+        {
+            get
+            {
+                return _persons;
+            }
+            set
+            {
+                _persons = value;
+            }
+        }
+
+        public int nbNote
+        {
+            get
+            {
+                return _nbNote;
+            }
+            set
+            {
+                _nbNote = value;
+            }
+        }
+
+        public int nbPerson
+        {
+            get
+            {
+                return _nbPerson;
+            }
+            set
+            {
+                _nbPerson = value;
+            }
+        }
 
         public Population()
         {

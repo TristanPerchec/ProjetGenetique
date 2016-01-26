@@ -1,6 +1,6 @@
 ﻿namespace ProjetGenetique
 {
-    partial class Form1
+    partial class ProjetGenetique
     {
         /// <summary>
         /// Variable nécessaire au concepteur.
@@ -31,75 +31,55 @@
             this.label1 = new System.Windows.Forms.Label();
             this.play1 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.play2 = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
             this.play3 = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
             this.play6 = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
             this.play5 = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
             this.play4 = new System.Windows.Forms.Button();
             this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
             this.play9 = new System.Windows.Forms.Button();
             this.label14 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
             this.play8 = new System.Windows.Forms.Button();
             this.label16 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
             this.play7 = new System.Windows.Forms.Button();
             this.label18 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
             this.play10 = new System.Windows.Forms.Button();
             this.label20 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
-            this.soum1 = new System.Windows.Forms.Button();
             this.note1 = new System.Windows.Forms.ComboBox();
-            this.stop1 = new System.Windows.Forms.Button();
-            this.stop2 = new System.Windows.Forms.Button();
-            this.stop3 = new System.Windows.Forms.Button();
-            this.stop4 = new System.Windows.Forms.Button();
-            this.stop5 = new System.Windows.Forms.Button();
-            this.stop10 = new System.Windows.Forms.Button();
-            this.stop9 = new System.Windows.Forms.Button();
-            this.stop8 = new System.Windows.Forms.Button();
-            this.stop7 = new System.Windows.Forms.Button();
-            this.stop6 = new System.Windows.Forms.Button();
             this.rec1 = new System.Windows.Forms.Button();
             this.rec2 = new System.Windows.Forms.Button();
             this.note2 = new System.Windows.Forms.ComboBox();
-            this.soum2 = new System.Windows.Forms.Button();
             this.rec3 = new System.Windows.Forms.Button();
             this.note3 = new System.Windows.Forms.ComboBox();
-            this.soum3 = new System.Windows.Forms.Button();
             this.rec6 = new System.Windows.Forms.Button();
             this.note6 = new System.Windows.Forms.ComboBox();
-            this.soum6 = new System.Windows.Forms.Button();
             this.rec5 = new System.Windows.Forms.Button();
             this.note5 = new System.Windows.Forms.ComboBox();
-            this.soum5 = new System.Windows.Forms.Button();
             this.rec4 = new System.Windows.Forms.Button();
             this.note4 = new System.Windows.Forms.ComboBox();
-            this.soum4 = new System.Windows.Forms.Button();
             this.rec10 = new System.Windows.Forms.Button();
             this.note10 = new System.Windows.Forms.ComboBox();
-            this.soum10 = new System.Windows.Forms.Button();
             this.rec9 = new System.Windows.Forms.Button();
             this.note9 = new System.Windows.Forms.ComboBox();
-            this.soum9 = new System.Windows.Forms.Button();
             this.rec8 = new System.Windows.Forms.Button();
             this.note8 = new System.Windows.Forms.ComboBox();
-            this.soum8 = new System.Windows.Forms.Button();
             this.rec7 = new System.Windows.Forms.Button();
             this.note7 = new System.Windows.Forms.ComboBox();
-            this.soum7 = new System.Windows.Forms.Button();
             this.suite = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -107,10 +87,9 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(30, 48);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(67, 13);
+            this.label1.Size = new System.Drawing.Size(59, 13);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Personne 1: ";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.label1.Text = "Mélodie 1: ";
             // 
             // play1
             // 
@@ -120,25 +99,16 @@
             this.play1.TabIndex = 3;
             this.play1.Text = "Lancer la mélodie";
             this.play1.UseVisualStyleBackColor = true;
+            this.play1.Click += new System.EventHandler(this.play1_Click);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(323, 48);
+            this.label2.Location = new System.Drawing.Point(227, 48);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(71, 13);
+            this.label2.Size = new System.Drawing.Size(36, 13);
             this.label2.TabIndex = 5;
-            this.label2.Text = "Note (sur 10):";
-            this.label2.Click += new System.EventHandler(this.label2_Click_1);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(323, 77);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(71, 13);
-            this.label3.TabIndex = 9;
-            this.label3.Text = "Note (sur 10):";
+            this.label2.Text = "Note :";
             // 
             // play2
             // 
@@ -158,15 +128,6 @@
             this.label4.TabIndex = 6;
             this.label4.Text = "Mélodie 2: ";
             // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(323, 106);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(71, 13);
-            this.label5.TabIndex = 13;
-            this.label5.Text = "Note (sur 10):";
-            // 
             // play3
             // 
             this.play3.Location = new System.Drawing.Point(95, 101);
@@ -184,15 +145,6 @@
             this.label6.Size = new System.Drawing.Size(59, 13);
             this.label6.TabIndex = 10;
             this.label6.Text = "Mélodie 3: ";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(323, 193);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(71, 13);
-            this.label7.TabIndex = 25;
-            this.label7.Text = "Note (sur 10):";
             // 
             // play6
             // 
@@ -212,15 +164,6 @@
             this.label8.TabIndex = 22;
             this.label8.Text = "Mélodie 6: ";
             // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(323, 164);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(71, 13);
-            this.label9.TabIndex = 21;
-            this.label9.Text = "Note (sur 10):";
-            // 
             // play5
             // 
             this.play5.Location = new System.Drawing.Point(95, 159);
@@ -238,15 +181,6 @@
             this.label10.Size = new System.Drawing.Size(59, 13);
             this.label10.TabIndex = 18;
             this.label10.Text = "Mélodie 5: ";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(323, 135);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(71, 13);
-            this.label11.TabIndex = 17;
-            this.label11.Text = "Note (sur 10):";
             // 
             // play4
             // 
@@ -266,15 +200,6 @@
             this.label12.TabIndex = 14;
             this.label12.Text = "Mélodie 4: ";
             // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(323, 280);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(71, 13);
-            this.label13.TabIndex = 37;
-            this.label13.Text = "Note (sur 10):";
-            // 
             // play9
             // 
             this.play9.Location = new System.Drawing.Point(95, 275);
@@ -292,15 +217,6 @@
             this.label14.Size = new System.Drawing.Size(59, 13);
             this.label14.TabIndex = 34;
             this.label14.Text = "Mélodie 9: ";
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(323, 251);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(71, 13);
-            this.label15.TabIndex = 33;
-            this.label15.Text = "Note (sur 10):";
             // 
             // play8
             // 
@@ -320,15 +236,6 @@
             this.label16.TabIndex = 30;
             this.label16.Text = "Mélodie 8: ";
             // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(323, 222);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(71, 13);
-            this.label17.TabIndex = 29;
-            this.label17.Text = "Note (sur 10):";
-            // 
             // play7
             // 
             this.play7.Location = new System.Drawing.Point(95, 217);
@@ -346,15 +253,6 @@
             this.label18.Size = new System.Drawing.Size(59, 13);
             this.label18.TabIndex = 26;
             this.label18.Text = "Mélodie 7: ";
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(323, 309);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(71, 13);
-            this.label19.TabIndex = 41;
-            this.label19.Text = "Note (sur 10):";
             // 
             // play10
             // 
@@ -378,142 +276,40 @@
             // 
             this.label21.AutoSize = true;
             this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.Location = new System.Drawing.Point(287, 9);
+            this.label21.Location = new System.Drawing.Point(132, 9);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(270, 25);
             this.label21.TabIndex = 42;
             this.label21.Text = "IA - Génération d\'une mélodie";
             // 
-            // soum1
-            // 
-            this.soum1.Location = new System.Drawing.Point(531, 43);
-            this.soum1.Name = "soum1";
-            this.soum1.Size = new System.Drawing.Size(118, 23);
-            this.soum1.TabIndex = 43;
-            this.soum1.Text = "Soumettre la notation";
-            this.soum1.UseVisualStyleBackColor = true;
-            // 
             // note1
             // 
             this.note1.FormattingEnabled = true;
             this.note1.Items.AddRange(new object[] {
+            "0",
             "1",
             "2",
             "3",
             "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10"});
-            this.note1.Location = new System.Drawing.Point(401, 44);
+            "5"});
+            this.note1.Location = new System.Drawing.Point(269, 45);
             this.note1.Name = "note1";
             this.note1.Size = new System.Drawing.Size(121, 21);
             this.note1.TabIndex = 53;
             // 
-            // stop1
-            // 
-            this.stop1.Location = new System.Drawing.Point(227, 43);
-            this.stop1.Name = "stop1";
-            this.stop1.Size = new System.Drawing.Size(72, 23);
-            this.stop1.TabIndex = 54;
-            this.stop1.Text = "STOP";
-            this.stop1.UseVisualStyleBackColor = true;
-            // 
-            // stop2
-            // 
-            this.stop2.Location = new System.Drawing.Point(227, 72);
-            this.stop2.Name = "stop2";
-            this.stop2.Size = new System.Drawing.Size(72, 23);
-            this.stop2.TabIndex = 55;
-            this.stop2.Text = "STOP";
-            this.stop2.UseVisualStyleBackColor = true;
-            // 
-            // stop3
-            // 
-            this.stop3.Location = new System.Drawing.Point(227, 101);
-            this.stop3.Name = "stop3";
-            this.stop3.Size = new System.Drawing.Size(72, 23);
-            this.stop3.TabIndex = 56;
-            this.stop3.Text = "STOP";
-            this.stop3.UseVisualStyleBackColor = true;
-            // 
-            // stop4
-            // 
-            this.stop4.Location = new System.Drawing.Point(227, 130);
-            this.stop4.Name = "stop4";
-            this.stop4.Size = new System.Drawing.Size(72, 23);
-            this.stop4.TabIndex = 57;
-            this.stop4.Text = "STOP";
-            this.stop4.UseVisualStyleBackColor = true;
-            // 
-            // stop5
-            // 
-            this.stop5.Location = new System.Drawing.Point(227, 159);
-            this.stop5.Name = "stop5";
-            this.stop5.Size = new System.Drawing.Size(72, 23);
-            this.stop5.TabIndex = 58;
-            this.stop5.Text = "STOP";
-            this.stop5.UseVisualStyleBackColor = true;
-            // 
-            // stop10
-            // 
-            this.stop10.Location = new System.Drawing.Point(227, 304);
-            this.stop10.Name = "stop10";
-            this.stop10.Size = new System.Drawing.Size(72, 23);
-            this.stop10.TabIndex = 63;
-            this.stop10.Text = "STOP";
-            this.stop10.UseVisualStyleBackColor = true;
-            // 
-            // stop9
-            // 
-            this.stop9.Location = new System.Drawing.Point(227, 275);
-            this.stop9.Name = "stop9";
-            this.stop9.Size = new System.Drawing.Size(72, 23);
-            this.stop9.TabIndex = 62;
-            this.stop9.Text = "STOP";
-            this.stop9.UseVisualStyleBackColor = true;
-            // 
-            // stop8
-            // 
-            this.stop8.Location = new System.Drawing.Point(227, 246);
-            this.stop8.Name = "stop8";
-            this.stop8.Size = new System.Drawing.Size(72, 23);
-            this.stop8.TabIndex = 61;
-            this.stop8.Text = "STOP";
-            this.stop8.UseVisualStyleBackColor = true;
-            // 
-            // stop7
-            // 
-            this.stop7.Location = new System.Drawing.Point(227, 217);
-            this.stop7.Name = "stop7";
-            this.stop7.Size = new System.Drawing.Size(72, 23);
-            this.stop7.TabIndex = 60;
-            this.stop7.Text = "STOP";
-            this.stop7.UseVisualStyleBackColor = true;
-            // 
-            // stop6
-            // 
-            this.stop6.Location = new System.Drawing.Point(227, 188);
-            this.stop6.Name = "stop6";
-            this.stop6.Size = new System.Drawing.Size(72, 23);
-            this.stop6.TabIndex = 59;
-            this.stop6.Text = "STOP";
-            this.stop6.UseVisualStyleBackColor = true;
-            // 
             // rec1
             // 
-            this.rec1.Location = new System.Drawing.Point(695, 43);
+            this.rec1.Location = new System.Drawing.Point(411, 43);
             this.rec1.Name = "rec1";
             this.rec1.Size = new System.Drawing.Size(118, 23);
             this.rec1.TabIndex = 64;
             this.rec1.Text = "Enregistrer la mélodie";
             this.rec1.UseVisualStyleBackColor = true;
+            this.rec1.Click += new System.EventHandler(this.rec1_Click);
             // 
             // rec2
             // 
-            this.rec2.Location = new System.Drawing.Point(695, 71);
+            this.rec2.Location = new System.Drawing.Point(411, 71);
             this.rec2.Name = "rec2";
             this.rec2.Size = new System.Drawing.Size(118, 23);
             this.rec2.TabIndex = 67;
@@ -524,33 +320,20 @@
             // 
             this.note2.FormattingEnabled = true;
             this.note2.Items.AddRange(new object[] {
+            "0",
             "1",
             "2",
             "3",
             "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10"});
-            this.note2.Location = new System.Drawing.Point(401, 72);
+            "5"});
+            this.note2.Location = new System.Drawing.Point(269, 73);
             this.note2.Name = "note2";
             this.note2.Size = new System.Drawing.Size(121, 21);
             this.note2.TabIndex = 66;
             // 
-            // soum2
-            // 
-            this.soum2.Location = new System.Drawing.Point(531, 71);
-            this.soum2.Name = "soum2";
-            this.soum2.Size = new System.Drawing.Size(118, 23);
-            this.soum2.TabIndex = 65;
-            this.soum2.Text = "Soumettre la notation";
-            this.soum2.UseVisualStyleBackColor = true;
-            // 
             // rec3
             // 
-            this.rec3.Location = new System.Drawing.Point(695, 101);
+            this.rec3.Location = new System.Drawing.Point(411, 101);
             this.rec3.Name = "rec3";
             this.rec3.Size = new System.Drawing.Size(118, 23);
             this.rec3.TabIndex = 70;
@@ -561,33 +344,20 @@
             // 
             this.note3.FormattingEnabled = true;
             this.note3.Items.AddRange(new object[] {
+            "0",
             "1",
             "2",
             "3",
             "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10"});
-            this.note3.Location = new System.Drawing.Point(401, 102);
+            "5"});
+            this.note3.Location = new System.Drawing.Point(269, 103);
             this.note3.Name = "note3";
             this.note3.Size = new System.Drawing.Size(121, 21);
             this.note3.TabIndex = 69;
             // 
-            // soum3
-            // 
-            this.soum3.Location = new System.Drawing.Point(531, 101);
-            this.soum3.Name = "soum3";
-            this.soum3.Size = new System.Drawing.Size(118, 23);
-            this.soum3.TabIndex = 68;
-            this.soum3.Text = "Soumettre la notation";
-            this.soum3.UseVisualStyleBackColor = true;
-            // 
             // rec6
             // 
-            this.rec6.Location = new System.Drawing.Point(695, 189);
+            this.rec6.Location = new System.Drawing.Point(411, 189);
             this.rec6.Name = "rec6";
             this.rec6.Size = new System.Drawing.Size(118, 23);
             this.rec6.TabIndex = 79;
@@ -598,33 +368,20 @@
             // 
             this.note6.FormattingEnabled = true;
             this.note6.Items.AddRange(new object[] {
+            "0",
             "1",
             "2",
             "3",
             "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10"});
-            this.note6.Location = new System.Drawing.Point(401, 190);
+            "5"});
+            this.note6.Location = new System.Drawing.Point(269, 191);
             this.note6.Name = "note6";
             this.note6.Size = new System.Drawing.Size(121, 21);
             this.note6.TabIndex = 78;
             // 
-            // soum6
-            // 
-            this.soum6.Location = new System.Drawing.Point(531, 189);
-            this.soum6.Name = "soum6";
-            this.soum6.Size = new System.Drawing.Size(118, 23);
-            this.soum6.TabIndex = 77;
-            this.soum6.Text = "Soumettre la notation";
-            this.soum6.UseVisualStyleBackColor = true;
-            // 
             // rec5
             // 
-            this.rec5.Location = new System.Drawing.Point(695, 159);
+            this.rec5.Location = new System.Drawing.Point(411, 159);
             this.rec5.Name = "rec5";
             this.rec5.Size = new System.Drawing.Size(118, 23);
             this.rec5.TabIndex = 76;
@@ -635,33 +392,20 @@
             // 
             this.note5.FormattingEnabled = true;
             this.note5.Items.AddRange(new object[] {
+            "0",
             "1",
             "2",
             "3",
             "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10"});
-            this.note5.Location = new System.Drawing.Point(401, 160);
+            "5"});
+            this.note5.Location = new System.Drawing.Point(269, 161);
             this.note5.Name = "note5";
             this.note5.Size = new System.Drawing.Size(121, 21);
             this.note5.TabIndex = 75;
             // 
-            // soum5
-            // 
-            this.soum5.Location = new System.Drawing.Point(531, 159);
-            this.soum5.Name = "soum5";
-            this.soum5.Size = new System.Drawing.Size(118, 23);
-            this.soum5.TabIndex = 74;
-            this.soum5.Text = "Soumettre la notation";
-            this.soum5.UseVisualStyleBackColor = true;
-            // 
             // rec4
             // 
-            this.rec4.Location = new System.Drawing.Point(695, 131);
+            this.rec4.Location = new System.Drawing.Point(411, 131);
             this.rec4.Name = "rec4";
             this.rec4.Size = new System.Drawing.Size(118, 23);
             this.rec4.TabIndex = 73;
@@ -672,33 +416,20 @@
             // 
             this.note4.FormattingEnabled = true;
             this.note4.Items.AddRange(new object[] {
+            "0",
             "1",
             "2",
             "3",
             "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10"});
-            this.note4.Location = new System.Drawing.Point(401, 132);
+            "5"});
+            this.note4.Location = new System.Drawing.Point(269, 133);
             this.note4.Name = "note4";
             this.note4.Size = new System.Drawing.Size(121, 21);
             this.note4.TabIndex = 72;
             // 
-            // soum4
-            // 
-            this.soum4.Location = new System.Drawing.Point(531, 131);
-            this.soum4.Name = "soum4";
-            this.soum4.Size = new System.Drawing.Size(118, 23);
-            this.soum4.TabIndex = 71;
-            this.soum4.Text = "Soumettre la notation";
-            this.soum4.UseVisualStyleBackColor = true;
-            // 
             // rec10
             // 
-            this.rec10.Location = new System.Drawing.Point(695, 306);
+            this.rec10.Location = new System.Drawing.Point(411, 306);
             this.rec10.Name = "rec10";
             this.rec10.Size = new System.Drawing.Size(118, 23);
             this.rec10.TabIndex = 91;
@@ -709,33 +440,20 @@
             // 
             this.note10.FormattingEnabled = true;
             this.note10.Items.AddRange(new object[] {
+            "0",
             "1",
             "2",
             "3",
             "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10"});
-            this.note10.Location = new System.Drawing.Point(401, 307);
+            "5"});
+            this.note10.Location = new System.Drawing.Point(269, 308);
             this.note10.Name = "note10";
             this.note10.Size = new System.Drawing.Size(121, 21);
             this.note10.TabIndex = 90;
             // 
-            // soum10
-            // 
-            this.soum10.Location = new System.Drawing.Point(531, 306);
-            this.soum10.Name = "soum10";
-            this.soum10.Size = new System.Drawing.Size(118, 23);
-            this.soum10.TabIndex = 89;
-            this.soum10.Text = "Soumettre la notation";
-            this.soum10.UseVisualStyleBackColor = true;
-            // 
             // rec9
             // 
-            this.rec9.Location = new System.Drawing.Point(695, 276);
+            this.rec9.Location = new System.Drawing.Point(411, 276);
             this.rec9.Name = "rec9";
             this.rec9.Size = new System.Drawing.Size(118, 23);
             this.rec9.TabIndex = 88;
@@ -746,33 +464,20 @@
             // 
             this.note9.FormattingEnabled = true;
             this.note9.Items.AddRange(new object[] {
+            "0",
             "1",
             "2",
             "3",
             "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10"});
-            this.note9.Location = new System.Drawing.Point(401, 277);
+            "5"});
+            this.note9.Location = new System.Drawing.Point(269, 278);
             this.note9.Name = "note9";
             this.note9.Size = new System.Drawing.Size(121, 21);
             this.note9.TabIndex = 87;
             // 
-            // soum9
-            // 
-            this.soum9.Location = new System.Drawing.Point(531, 276);
-            this.soum9.Name = "soum9";
-            this.soum9.Size = new System.Drawing.Size(118, 23);
-            this.soum9.TabIndex = 86;
-            this.soum9.Text = "Soumettre la notation";
-            this.soum9.UseVisualStyleBackColor = true;
-            // 
             // rec8
             // 
-            this.rec8.Location = new System.Drawing.Point(695, 248);
+            this.rec8.Location = new System.Drawing.Point(411, 248);
             this.rec8.Name = "rec8";
             this.rec8.Size = new System.Drawing.Size(118, 23);
             this.rec8.TabIndex = 85;
@@ -783,33 +488,20 @@
             // 
             this.note8.FormattingEnabled = true;
             this.note8.Items.AddRange(new object[] {
+            "0",
             "1",
             "2",
             "3",
             "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10"});
-            this.note8.Location = new System.Drawing.Point(401, 249);
+            "5"});
+            this.note8.Location = new System.Drawing.Point(269, 250);
             this.note8.Name = "note8";
             this.note8.Size = new System.Drawing.Size(121, 21);
             this.note8.TabIndex = 84;
             // 
-            // soum8
-            // 
-            this.soum8.Location = new System.Drawing.Point(531, 248);
-            this.soum8.Name = "soum8";
-            this.soum8.Size = new System.Drawing.Size(118, 23);
-            this.soum8.TabIndex = 83;
-            this.soum8.Text = "Soumettre la notation";
-            this.soum8.UseVisualStyleBackColor = true;
-            // 
             // rec7
             // 
-            this.rec7.Location = new System.Drawing.Point(695, 218);
+            this.rec7.Location = new System.Drawing.Point(411, 218);
             this.rec7.Name = "rec7";
             this.rec7.Size = new System.Drawing.Size(118, 23);
             this.rec7.TabIndex = 82;
@@ -820,118 +512,167 @@
             // 
             this.note7.FormattingEnabled = true;
             this.note7.Items.AddRange(new object[] {
+            "0",
             "1",
             "2",
             "3",
             "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10"});
-            this.note7.Location = new System.Drawing.Point(401, 219);
+            "5"});
+            this.note7.Location = new System.Drawing.Point(269, 220);
             this.note7.Name = "note7";
             this.note7.Size = new System.Drawing.Size(121, 21);
             this.note7.TabIndex = 81;
             // 
-            // soum7
-            // 
-            this.soum7.Location = new System.Drawing.Point(531, 218);
-            this.soum7.Name = "soum7";
-            this.soum7.Size = new System.Drawing.Size(118, 23);
-            this.soum7.TabIndex = 80;
-            this.soum7.Text = "Soumettre la notation";
-            this.soum7.UseVisualStyleBackColor = true;
-            // 
             // suite
             // 
-            this.suite.Location = new System.Drawing.Point(304, 350);
+            this.suite.Location = new System.Drawing.Point(137, 335);
             this.suite.Name = "suite";
             this.suite.Size = new System.Drawing.Size(253, 23);
             this.suite.TabIndex = 92;
             this.suite.Text = "PASSER A LA GENERATION SUIVANTE";
             this.suite.UseVisualStyleBackColor = true;
+            this.suite.Click += new System.EventHandler(this.suite_Click);
             // 
-            // Form1
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(227, 75);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(36, 13);
+            this.label3.TabIndex = 93;
+            this.label3.Text = "Note :";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(227, 105);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(36, 13);
+            this.label5.TabIndex = 94;
+            this.label5.Text = "Note :";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(227, 135);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(36, 13);
+            this.label7.TabIndex = 95;
+            this.label7.Text = "Note :";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(227, 164);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(36, 13);
+            this.label9.TabIndex = 96;
+            this.label9.Text = "Note :";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(227, 193);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(36, 13);
+            this.label11.TabIndex = 97;
+            this.label11.Text = "Note :";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(227, 223);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(36, 13);
+            this.label13.TabIndex = 98;
+            this.label13.Text = "Note :";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(227, 253);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(36, 13);
+            this.label15.TabIndex = 99;
+            this.label15.Text = "Note :";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(227, 281);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(36, 13);
+            this.label17.TabIndex = 100;
+            this.label17.Text = "Note :";
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(227, 310);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(36, 13);
+            this.label19.TabIndex = 101;
+            this.label19.Text = "Note :";
+            // 
+            // ProjetGenetique
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(854, 388);
+            this.ClientSize = new System.Drawing.Size(541, 366);
+            this.Controls.Add(this.label19);
+            this.Controls.Add(this.label17);
+            this.Controls.Add(this.label15);
+            this.Controls.Add(this.label13);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.suite);
             this.Controls.Add(this.rec10);
             this.Controls.Add(this.note10);
-            this.Controls.Add(this.soum10);
             this.Controls.Add(this.rec9);
             this.Controls.Add(this.note9);
-            this.Controls.Add(this.soum9);
             this.Controls.Add(this.rec8);
             this.Controls.Add(this.note8);
-            this.Controls.Add(this.soum8);
             this.Controls.Add(this.rec7);
             this.Controls.Add(this.note7);
-            this.Controls.Add(this.soum7);
             this.Controls.Add(this.rec6);
             this.Controls.Add(this.note6);
-            this.Controls.Add(this.soum6);
             this.Controls.Add(this.rec5);
             this.Controls.Add(this.note5);
-            this.Controls.Add(this.soum5);
             this.Controls.Add(this.rec4);
             this.Controls.Add(this.note4);
-            this.Controls.Add(this.soum4);
             this.Controls.Add(this.rec3);
             this.Controls.Add(this.note3);
-            this.Controls.Add(this.soum3);
             this.Controls.Add(this.rec2);
             this.Controls.Add(this.note2);
-            this.Controls.Add(this.soum2);
             this.Controls.Add(this.rec1);
-            this.Controls.Add(this.stop10);
-            this.Controls.Add(this.stop9);
-            this.Controls.Add(this.stop8);
-            this.Controls.Add(this.stop7);
-            this.Controls.Add(this.stop6);
-            this.Controls.Add(this.stop5);
-            this.Controls.Add(this.stop4);
-            this.Controls.Add(this.stop3);
-            this.Controls.Add(this.stop2);
-            this.Controls.Add(this.stop1);
             this.Controls.Add(this.note1);
-            this.Controls.Add(this.soum1);
             this.Controls.Add(this.label21);
-            this.Controls.Add(this.label19);
             this.Controls.Add(this.play10);
             this.Controls.Add(this.label20);
-            this.Controls.Add(this.label13);
             this.Controls.Add(this.play9);
             this.Controls.Add(this.label14);
-            this.Controls.Add(this.label15);
             this.Controls.Add(this.play8);
             this.Controls.Add(this.label16);
-            this.Controls.Add(this.label17);
             this.Controls.Add(this.play7);
             this.Controls.Add(this.label18);
-            this.Controls.Add(this.label7);
             this.Controls.Add(this.play6);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.label9);
             this.Controls.Add(this.play5);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.label11);
             this.Controls.Add(this.play4);
             this.Controls.Add(this.label12);
-            this.Controls.Add(this.label5);
             this.Controls.Add(this.play3);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.play2);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.play1);
             this.Controls.Add(this.label1);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "ProjetGenetique";
+            this.Text = "Projet Genetique";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -942,75 +683,55 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button play1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button play2;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button play3;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button play6;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Button play5;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Button play4;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Button play9;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Button play8;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Button play7;
         private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Button play10;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.Button soum1;
         private System.Windows.Forms.ComboBox note1;
-        private System.Windows.Forms.Button stop1;
-        private System.Windows.Forms.Button stop2;
-        private System.Windows.Forms.Button stop3;
-        private System.Windows.Forms.Button stop4;
-        private System.Windows.Forms.Button stop5;
-        private System.Windows.Forms.Button stop10;
-        private System.Windows.Forms.Button stop9;
-        private System.Windows.Forms.Button stop8;
-        private System.Windows.Forms.Button stop7;
-        private System.Windows.Forms.Button stop6;
         private System.Windows.Forms.Button rec1;
         private System.Windows.Forms.Button rec2;
         private System.Windows.Forms.ComboBox note2;
-        private System.Windows.Forms.Button soum2;
         private System.Windows.Forms.Button rec3;
         private System.Windows.Forms.ComboBox note3;
-        private System.Windows.Forms.Button soum3;
         private System.Windows.Forms.Button rec6;
         private System.Windows.Forms.ComboBox note6;
-        private System.Windows.Forms.Button soum6;
         private System.Windows.Forms.Button rec5;
         private System.Windows.Forms.ComboBox note5;
-        private System.Windows.Forms.Button soum5;
         private System.Windows.Forms.Button rec4;
         private System.Windows.Forms.ComboBox note4;
-        private System.Windows.Forms.Button soum4;
         private System.Windows.Forms.Button rec10;
         private System.Windows.Forms.ComboBox note10;
-        private System.Windows.Forms.Button soum10;
         private System.Windows.Forms.Button rec9;
         private System.Windows.Forms.ComboBox note9;
-        private System.Windows.Forms.Button soum9;
         private System.Windows.Forms.Button rec8;
         private System.Windows.Forms.ComboBox note8;
-        private System.Windows.Forms.Button soum8;
         private System.Windows.Forms.Button rec7;
         private System.Windows.Forms.ComboBox note7;
-        private System.Windows.Forms.Button soum7;
         private System.Windows.Forms.Button suite;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label label19;
     }
 }
 
