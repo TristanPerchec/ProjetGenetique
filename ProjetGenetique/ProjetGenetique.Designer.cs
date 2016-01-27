@@ -118,6 +118,7 @@
             this.play2.TabIndex = 7;
             this.play2.Text = "Lancer la mélodie";
             this.play2.UseVisualStyleBackColor = true;
+            this.play1.Click += new System.EventHandler(this.play2_Click);
             // 
             // label4
             // 
@@ -136,6 +137,7 @@
             this.play3.TabIndex = 11;
             this.play3.Text = "Lancer la mélodie";
             this.play3.UseVisualStyleBackColor = true;
+            this.play1.Click += new System.EventHandler(this.play3_Click);
             // 
             // label6
             // 
@@ -154,6 +156,7 @@
             this.play6.TabIndex = 23;
             this.play6.Text = "Lancer la mélodie";
             this.play6.UseVisualStyleBackColor = true;
+            this.play1.Click += new System.EventHandler(this.play6_Click);
             // 
             // label8
             // 
@@ -172,6 +175,7 @@
             this.play5.TabIndex = 19;
             this.play5.Text = "Lancer la mélodie";
             this.play5.UseVisualStyleBackColor = true;
+            this.play1.Click += new System.EventHandler(this.play5_Click);
             // 
             // label10
             // 
@@ -190,6 +194,7 @@
             this.play4.TabIndex = 15;
             this.play4.Text = "Lancer la mélodie";
             this.play4.UseVisualStyleBackColor = true;
+            this.play1.Click += new System.EventHandler(this.play4_Click);
             // 
             // label12
             // 
@@ -208,6 +213,7 @@
             this.play9.TabIndex = 35;
             this.play9.Text = "Lancer la mélodie";
             this.play9.UseVisualStyleBackColor = true;
+            this.play1.Click += new System.EventHandler(this.play9_Click);
             // 
             // label14
             // 
@@ -226,6 +232,7 @@
             this.play8.TabIndex = 31;
             this.play8.Text = "Lancer la mélodie";
             this.play8.UseVisualStyleBackColor = true;
+            this.play1.Click += new System.EventHandler(this.play8_Click);
             // 
             // label16
             // 
@@ -244,6 +251,7 @@
             this.play7.TabIndex = 27;
             this.play7.Text = "Lancer la mélodie";
             this.play7.UseVisualStyleBackColor = true;
+            this.play1.Click += new System.EventHandler(this.play7_Click);
             // 
             // label18
             // 
@@ -262,6 +270,7 @@
             this.play10.TabIndex = 39;
             this.play10.Text = "Lancer la mélodie";
             this.play10.UseVisualStyleBackColor = true;
+            this.play1.Click += new System.EventHandler(this.play10_Click);
             // 
             // label20
             // 
@@ -315,6 +324,7 @@
             this.rec2.TabIndex = 67;
             this.rec2.Text = "Enregistrer la mélodie";
             this.rec2.UseVisualStyleBackColor = true;
+            this.rec1.Click += new System.EventHandler(this.rec2_Click);
             // 
             // note2
             // 
@@ -339,6 +349,7 @@
             this.rec3.TabIndex = 70;
             this.rec3.Text = "Enregistrer la mélodie";
             this.rec3.UseVisualStyleBackColor = true;
+            this.rec1.Click += new System.EventHandler(this.rec3_Click);
             // 
             // note3
             // 
@@ -363,6 +374,7 @@
             this.rec6.TabIndex = 79;
             this.rec6.Text = "Enregistrer la mélodie";
             this.rec6.UseVisualStyleBackColor = true;
+            this.rec1.Click += new System.EventHandler(this.rec6_Click);
             // 
             // note6
             // 
@@ -387,6 +399,7 @@
             this.rec5.TabIndex = 76;
             this.rec5.Text = "Enregistrer la mélodie";
             this.rec5.UseVisualStyleBackColor = true;
+            this.rec1.Click += new System.EventHandler(this.rec5_Click);
             // 
             // note5
             // 
@@ -411,6 +424,7 @@
             this.rec4.TabIndex = 73;
             this.rec4.Text = "Enregistrer la mélodie";
             this.rec4.UseVisualStyleBackColor = true;
+            this.rec1.Click += new System.EventHandler(this.rec4_Click);
             // 
             // note4
             // 
@@ -435,6 +449,7 @@
             this.rec10.TabIndex = 91;
             this.rec10.Text = "Enregistrer la mélodie";
             this.rec10.UseVisualStyleBackColor = true;
+            this.rec1.Click += new System.EventHandler(this.rec10_Click);
             // 
             // note10
             // 
@@ -459,6 +474,7 @@
             this.rec9.TabIndex = 88;
             this.rec9.Text = "Enregistrer la mélodie";
             this.rec9.UseVisualStyleBackColor = true;
+            this.rec1.Click += new System.EventHandler(this.rec9_Click);
             // 
             // note9
             // 
@@ -483,6 +499,7 @@
             this.rec8.TabIndex = 85;
             this.rec8.Text = "Enregistrer la mélodie";
             this.rec8.UseVisualStyleBackColor = true;
+            this.rec1.Click += new System.EventHandler(this.rec8_Click);
             // 
             // note8
             // 
@@ -507,6 +524,7 @@
             this.rec7.TabIndex = 82;
             this.rec7.Text = "Enregistrer la mélodie";
             this.rec7.UseVisualStyleBackColor = true;
+            this.rec1.Click += new System.EventHandler(this.rec7_Click);
             // 
             // note7
             // 
