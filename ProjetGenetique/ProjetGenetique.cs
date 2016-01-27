@@ -131,14 +131,14 @@ namespace ProjetGenetique
             createMidis();
         }
 
-        //@todo do the same with all the other rec buttons
+        
         private void rec1_Click(object sender, EventArgs e)
         {
             //rec number - 1
             saveMusic(0);
         }
 
-        //@todo do the same with all the other play buttons
+        
         private void play1_Click(object sender, EventArgs e)
         {
             if (_isPlaying) {
@@ -146,6 +146,186 @@ namespace ProjetGenetique
             } else {
                 //play number - 1
                 playMusic("File0.mid");
+            }
+        }
+
+        private void rec2_Click(object sender, EventArgs e)
+        {
+            //rec number - 1
+            saveMusic(1);
+        }
+
+
+        private void play2_Click(object sender, EventArgs e)
+        {
+            if (_isPlaying)
+            {
+                stopMusic();
+            }
+            else
+            {
+                //play number - 1
+                playMusic("File1.mid");
+            }
+        }
+
+        private void rec3_Click(object sender, EventArgs e)
+        {
+            //rec number - 1
+            saveMusic(2);
+        }
+
+
+        private void play3_Click(object sender, EventArgs e)
+        {
+            if (_isPlaying)
+            {
+                stopMusic();
+            }
+            else
+            {
+                //play number - 1
+                playMusic("File2.mid");
+            }
+        }
+
+        private void rec4_Click(object sender, EventArgs e)
+        {
+            //rec number - 1
+            saveMusic(3);
+        }
+
+
+        private void play4_Click(object sender, EventArgs e)
+        {
+            if (_isPlaying)
+            {
+                stopMusic();
+            }
+            else
+            {
+                //play number - 1
+                playMusic("File3.mid");
+            }
+        }
+
+        private void rec5_Click(object sender, EventArgs e)
+        {
+            //rec number - 1
+            saveMusic(4);
+        }
+
+
+        private void play5_Click(object sender, EventArgs e)
+        {
+            if (_isPlaying)
+            {
+                stopMusic();
+            }
+            else
+            {
+                //play number - 1
+                playMusic("File4.mid");
+            }
+        }
+
+        private void rec6_Click(object sender, EventArgs e)
+        {
+            //rec number - 1
+            saveMusic(5);
+        }
+
+
+        private void play6_Click(object sender, EventArgs e)
+        {
+            if (_isPlaying)
+            {
+                stopMusic();
+            }
+            else
+            {
+                //play number - 1
+                playMusic("File5.mid");
+            }
+        }
+
+        private void rec7_Click(object sender, EventArgs e)
+        {
+            //rec number - 1
+            saveMusic(6);
+        }
+
+
+        private void play7_Click(object sender, EventArgs e)
+        {
+            if (_isPlaying)
+            {
+                stopMusic();
+            }
+            else
+            {
+                //play number - 1
+                playMusic("File6.mid");
+            }
+        }
+
+        private void rec8_Click(object sender, EventArgs e)
+        {
+            //rec number - 1
+            saveMusic(7);
+        }
+
+
+        private void play8_Click(object sender, EventArgs e)
+        {
+            if (_isPlaying)
+            {
+                stopMusic();
+            }
+            else
+            {
+                //play number - 1
+                playMusic("File7.mid");
+            }
+        }
+
+        private void rec9_Click(object sender, EventArgs e)
+        {
+            //rec number - 1
+            saveMusic(8);
+        }
+
+
+        private void play9_Click(object sender, EventArgs e)
+        {
+            if (_isPlaying)
+            {
+                stopMusic();
+            }
+            else
+            {
+                //play number - 1
+                playMusic("File8.mid");
+            }
+        }
+
+        private void rec10_Click(object sender, EventArgs e)
+        {
+            //rec number - 1
+            saveMusic(9);
+        }
+
+
+        private void play10_Click(object sender, EventArgs e)
+        {
+            if (_isPlaying)
+            {
+                stopMusic();
+            }
+            else
+            {
+                //play number - 1
+                playMusic("File9.mid");
             }
         }
 
