@@ -50,26 +50,16 @@
             this.play10 = new System.Windows.Forms.Button();
             this.label20 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
-            this.note1 = new System.Windows.Forms.ComboBox();
             this.rec1 = new System.Windows.Forms.Button();
             this.rec2 = new System.Windows.Forms.Button();
-            this.note2 = new System.Windows.Forms.ComboBox();
             this.rec3 = new System.Windows.Forms.Button();
-            this.note3 = new System.Windows.Forms.ComboBox();
             this.rec6 = new System.Windows.Forms.Button();
-            this.note6 = new System.Windows.Forms.ComboBox();
             this.rec5 = new System.Windows.Forms.Button();
-            this.note5 = new System.Windows.Forms.ComboBox();
             this.rec4 = new System.Windows.Forms.Button();
-            this.note4 = new System.Windows.Forms.ComboBox();
             this.rec10 = new System.Windows.Forms.Button();
-            this.note10 = new System.Windows.Forms.ComboBox();
             this.rec9 = new System.Windows.Forms.Button();
-            this.note9 = new System.Windows.Forms.ComboBox();
             this.rec8 = new System.Windows.Forms.Button();
-            this.note8 = new System.Windows.Forms.ComboBox();
             this.rec7 = new System.Windows.Forms.Button();
-            this.note7 = new System.Windows.Forms.ComboBox();
             this.suite = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -80,6 +70,16 @@
             this.label15 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
+            this.note1 = new System.Windows.Forms.TextBox();
+            this.note2 = new System.Windows.Forms.TextBox();
+            this.note3 = new System.Windows.Forms.TextBox();
+            this.note4 = new System.Windows.Forms.TextBox();
+            this.note5 = new System.Windows.Forms.TextBox();
+            this.note6 = new System.Windows.Forms.TextBox();
+            this.note7 = new System.Windows.Forms.TextBox();
+            this.note8 = new System.Windows.Forms.TextBox();
+            this.note9 = new System.Windows.Forms.TextBox();
+            this.note10 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -118,7 +118,7 @@
             this.play2.TabIndex = 7;
             this.play2.Text = "Lancer la mélodie";
             this.play2.UseVisualStyleBackColor = true;
-            this.play1.Click += new System.EventHandler(this.play2_Click);
+            this.play2.Click += new System.EventHandler(this.play2_Click);
             // 
             // label4
             // 
@@ -137,7 +137,7 @@
             this.play3.TabIndex = 11;
             this.play3.Text = "Lancer la mélodie";
             this.play3.UseVisualStyleBackColor = true;
-            this.play1.Click += new System.EventHandler(this.play3_Click);
+            this.play3.Click += new System.EventHandler(this.play3_Click);
             // 
             // label6
             // 
@@ -156,7 +156,7 @@
             this.play6.TabIndex = 23;
             this.play6.Text = "Lancer la mélodie";
             this.play6.UseVisualStyleBackColor = true;
-            this.play1.Click += new System.EventHandler(this.play6_Click);
+            this.play6.Click += new System.EventHandler(this.play6_Click);
             // 
             // label8
             // 
@@ -175,7 +175,7 @@
             this.play5.TabIndex = 19;
             this.play5.Text = "Lancer la mélodie";
             this.play5.UseVisualStyleBackColor = true;
-            this.play1.Click += new System.EventHandler(this.play5_Click);
+            this.play5.Click += new System.EventHandler(this.play5_Click);
             // 
             // label10
             // 
@@ -194,7 +194,7 @@
             this.play4.TabIndex = 15;
             this.play4.Text = "Lancer la mélodie";
             this.play4.UseVisualStyleBackColor = true;
-            this.play1.Click += new System.EventHandler(this.play4_Click);
+            this.play4.Click += new System.EventHandler(this.play4_Click);
             // 
             // label12
             // 
@@ -213,7 +213,7 @@
             this.play9.TabIndex = 35;
             this.play9.Text = "Lancer la mélodie";
             this.play9.UseVisualStyleBackColor = true;
-            this.play1.Click += new System.EventHandler(this.play9_Click);
+            this.play9.Click += new System.EventHandler(this.play9_Click);
             // 
             // label14
             // 
@@ -232,7 +232,7 @@
             this.play8.TabIndex = 31;
             this.play8.Text = "Lancer la mélodie";
             this.play8.UseVisualStyleBackColor = true;
-            this.play1.Click += new System.EventHandler(this.play8_Click);
+            this.play8.Click += new System.EventHandler(this.play8_Click);
             // 
             // label16
             // 
@@ -251,7 +251,7 @@
             this.play7.TabIndex = 27;
             this.play7.Text = "Lancer la mélodie";
             this.play7.UseVisualStyleBackColor = true;
-            this.play1.Click += new System.EventHandler(this.play7_Click);
+            this.play7.Click += new System.EventHandler(this.play7_Click);
             // 
             // label18
             // 
@@ -270,7 +270,7 @@
             this.play10.TabIndex = 39;
             this.play10.Text = "Lancer la mélodie";
             this.play10.UseVisualStyleBackColor = true;
-            this.play1.Click += new System.EventHandler(this.play10_Click);
+            this.play10.Click += new System.EventHandler(this.play10_Click);
             // 
             // label20
             // 
@@ -291,21 +291,6 @@
             this.label21.TabIndex = 42;
             this.label21.Text = "IA - Génération d\'une mélodie";
             // 
-            // note1
-            // 
-            this.note1.FormattingEnabled = true;
-            this.note1.Items.AddRange(new object[] {
-            "0",
-            "1",
-            "2",
-            "3",
-            "4",
-            "5"});
-            this.note1.Location = new System.Drawing.Point(269, 45);
-            this.note1.Name = "note1";
-            this.note1.Size = new System.Drawing.Size(121, 21);
-            this.note1.TabIndex = 53;
-            // 
             // rec1
             // 
             this.rec1.Location = new System.Drawing.Point(411, 43);
@@ -324,22 +309,7 @@
             this.rec2.TabIndex = 67;
             this.rec2.Text = "Enregistrer la mélodie";
             this.rec2.UseVisualStyleBackColor = true;
-            this.rec1.Click += new System.EventHandler(this.rec2_Click);
-            // 
-            // note2
-            // 
-            this.note2.FormattingEnabled = true;
-            this.note2.Items.AddRange(new object[] {
-            "0",
-            "1",
-            "2",
-            "3",
-            "4",
-            "5"});
-            this.note2.Location = new System.Drawing.Point(269, 73);
-            this.note2.Name = "note2";
-            this.note2.Size = new System.Drawing.Size(121, 21);
-            this.note2.TabIndex = 66;
+            this.rec2.Click += new System.EventHandler(this.rec2_Click);
             // 
             // rec3
             // 
@@ -349,22 +319,7 @@
             this.rec3.TabIndex = 70;
             this.rec3.Text = "Enregistrer la mélodie";
             this.rec3.UseVisualStyleBackColor = true;
-            this.rec1.Click += new System.EventHandler(this.rec3_Click);
-            // 
-            // note3
-            // 
-            this.note3.FormattingEnabled = true;
-            this.note3.Items.AddRange(new object[] {
-            "0",
-            "1",
-            "2",
-            "3",
-            "4",
-            "5"});
-            this.note3.Location = new System.Drawing.Point(269, 103);
-            this.note3.Name = "note3";
-            this.note3.Size = new System.Drawing.Size(121, 21);
-            this.note3.TabIndex = 69;
+            this.rec3.Click += new System.EventHandler(this.rec3_Click);
             // 
             // rec6
             // 
@@ -374,22 +329,7 @@
             this.rec6.TabIndex = 79;
             this.rec6.Text = "Enregistrer la mélodie";
             this.rec6.UseVisualStyleBackColor = true;
-            this.rec1.Click += new System.EventHandler(this.rec6_Click);
-            // 
-            // note6
-            // 
-            this.note6.FormattingEnabled = true;
-            this.note6.Items.AddRange(new object[] {
-            "0",
-            "1",
-            "2",
-            "3",
-            "4",
-            "5"});
-            this.note6.Location = new System.Drawing.Point(269, 191);
-            this.note6.Name = "note6";
-            this.note6.Size = new System.Drawing.Size(121, 21);
-            this.note6.TabIndex = 78;
+            this.rec6.Click += new System.EventHandler(this.rec6_Click);
             // 
             // rec5
             // 
@@ -399,22 +339,7 @@
             this.rec5.TabIndex = 76;
             this.rec5.Text = "Enregistrer la mélodie";
             this.rec5.UseVisualStyleBackColor = true;
-            this.rec1.Click += new System.EventHandler(this.rec5_Click);
-            // 
-            // note5
-            // 
-            this.note5.FormattingEnabled = true;
-            this.note5.Items.AddRange(new object[] {
-            "0",
-            "1",
-            "2",
-            "3",
-            "4",
-            "5"});
-            this.note5.Location = new System.Drawing.Point(269, 161);
-            this.note5.Name = "note5";
-            this.note5.Size = new System.Drawing.Size(121, 21);
-            this.note5.TabIndex = 75;
+            this.rec5.Click += new System.EventHandler(this.rec5_Click);
             // 
             // rec4
             // 
@@ -424,22 +349,7 @@
             this.rec4.TabIndex = 73;
             this.rec4.Text = "Enregistrer la mélodie";
             this.rec4.UseVisualStyleBackColor = true;
-            this.rec1.Click += new System.EventHandler(this.rec4_Click);
-            // 
-            // note4
-            // 
-            this.note4.FormattingEnabled = true;
-            this.note4.Items.AddRange(new object[] {
-            "0",
-            "1",
-            "2",
-            "3",
-            "4",
-            "5"});
-            this.note4.Location = new System.Drawing.Point(269, 133);
-            this.note4.Name = "note4";
-            this.note4.Size = new System.Drawing.Size(121, 21);
-            this.note4.TabIndex = 72;
+            this.rec4.Click += new System.EventHandler(this.rec4_Click);
             // 
             // rec10
             // 
@@ -449,22 +359,7 @@
             this.rec10.TabIndex = 91;
             this.rec10.Text = "Enregistrer la mélodie";
             this.rec10.UseVisualStyleBackColor = true;
-            this.rec1.Click += new System.EventHandler(this.rec10_Click);
-            // 
-            // note10
-            // 
-            this.note10.FormattingEnabled = true;
-            this.note10.Items.AddRange(new object[] {
-            "0",
-            "1",
-            "2",
-            "3",
-            "4",
-            "5"});
-            this.note10.Location = new System.Drawing.Point(269, 308);
-            this.note10.Name = "note10";
-            this.note10.Size = new System.Drawing.Size(121, 21);
-            this.note10.TabIndex = 90;
+            this.rec10.Click += new System.EventHandler(this.rec10_Click);
             // 
             // rec9
             // 
@@ -474,22 +369,7 @@
             this.rec9.TabIndex = 88;
             this.rec9.Text = "Enregistrer la mélodie";
             this.rec9.UseVisualStyleBackColor = true;
-            this.rec1.Click += new System.EventHandler(this.rec9_Click);
-            // 
-            // note9
-            // 
-            this.note9.FormattingEnabled = true;
-            this.note9.Items.AddRange(new object[] {
-            "0",
-            "1",
-            "2",
-            "3",
-            "4",
-            "5"});
-            this.note9.Location = new System.Drawing.Point(269, 278);
-            this.note9.Name = "note9";
-            this.note9.Size = new System.Drawing.Size(121, 21);
-            this.note9.TabIndex = 87;
+            this.rec9.Click += new System.EventHandler(this.rec9_Click);
             // 
             // rec8
             // 
@@ -499,22 +379,7 @@
             this.rec8.TabIndex = 85;
             this.rec8.Text = "Enregistrer la mélodie";
             this.rec8.UseVisualStyleBackColor = true;
-            this.rec1.Click += new System.EventHandler(this.rec8_Click);
-            // 
-            // note8
-            // 
-            this.note8.FormattingEnabled = true;
-            this.note8.Items.AddRange(new object[] {
-            "0",
-            "1",
-            "2",
-            "3",
-            "4",
-            "5"});
-            this.note8.Location = new System.Drawing.Point(269, 250);
-            this.note8.Name = "note8";
-            this.note8.Size = new System.Drawing.Size(121, 21);
-            this.note8.TabIndex = 84;
+            this.rec8.Click += new System.EventHandler(this.rec8_Click);
             // 
             // rec7
             // 
@@ -524,22 +389,7 @@
             this.rec7.TabIndex = 82;
             this.rec7.Text = "Enregistrer la mélodie";
             this.rec7.UseVisualStyleBackColor = true;
-            this.rec1.Click += new System.EventHandler(this.rec7_Click);
-            // 
-            // note7
-            // 
-            this.note7.FormattingEnabled = true;
-            this.note7.Items.AddRange(new object[] {
-            "0",
-            "1",
-            "2",
-            "3",
-            "4",
-            "5"});
-            this.note7.Location = new System.Drawing.Point(269, 220);
-            this.note7.Name = "note7";
-            this.note7.Size = new System.Drawing.Size(121, 21);
-            this.note7.TabIndex = 81;
+            this.rec7.Click += new System.EventHandler(this.rec7_Click);
             // 
             // suite
             // 
@@ -632,11 +482,91 @@
             this.label19.TabIndex = 101;
             this.label19.Text = "Note :";
             // 
+            // note1
+            // 
+            this.note1.Location = new System.Drawing.Point(269, 43);
+            this.note1.Name = "note1";
+            this.note1.Size = new System.Drawing.Size(100, 20);
+            this.note1.TabIndex = 102;
+            // 
+            // note2
+            // 
+            this.note2.Location = new System.Drawing.Point(269, 73);
+            this.note2.Name = "note2";
+            this.note2.Size = new System.Drawing.Size(100, 20);
+            this.note2.TabIndex = 103;
+            // 
+            // note3
+            // 
+            this.note3.Location = new System.Drawing.Point(269, 102);
+            this.note3.Name = "note3";
+            this.note3.Size = new System.Drawing.Size(100, 20);
+            this.note3.TabIndex = 104;
+            // 
+            // note4
+            // 
+            this.note4.Location = new System.Drawing.Point(269, 132);
+            this.note4.Name = "note4";
+            this.note4.Size = new System.Drawing.Size(100, 20);
+            this.note4.TabIndex = 105;
+            // 
+            // note5
+            // 
+            this.note5.Location = new System.Drawing.Point(269, 162);
+            this.note5.Name = "note5";
+            this.note5.Size = new System.Drawing.Size(100, 20);
+            this.note5.TabIndex = 106;
+            // 
+            // note6
+            // 
+            this.note6.Location = new System.Drawing.Point(269, 187);
+            this.note6.Name = "note6";
+            this.note6.Size = new System.Drawing.Size(100, 20);
+            this.note6.TabIndex = 107;
+            // 
+            // note7
+            // 
+            this.note7.Location = new System.Drawing.Point(269, 219);
+            this.note7.Name = "note7";
+            this.note7.Size = new System.Drawing.Size(100, 20);
+            this.note7.TabIndex = 108;
+            // 
+            // note8
+            // 
+            this.note8.Location = new System.Drawing.Point(269, 246);
+            this.note8.Name = "note8";
+            this.note8.Size = new System.Drawing.Size(100, 20);
+            this.note8.TabIndex = 109;
+            // 
+            // note9
+            // 
+            this.note9.Location = new System.Drawing.Point(269, 274);
+            this.note9.Name = "note9";
+            this.note9.Size = new System.Drawing.Size(100, 20);
+            this.note9.TabIndex = 110;
+            // 
+            // note10
+            // 
+            this.note10.Location = new System.Drawing.Point(268, 302);
+            this.note10.Name = "note10";
+            this.note10.Size = new System.Drawing.Size(100, 20);
+            this.note10.TabIndex = 111;
+            // 
             // ProjetGenetique
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(541, 366);
+            this.Controls.Add(this.note10);
+            this.Controls.Add(this.note9);
+            this.Controls.Add(this.note8);
+            this.Controls.Add(this.note7);
+            this.Controls.Add(this.note6);
+            this.Controls.Add(this.note5);
+            this.Controls.Add(this.note4);
+            this.Controls.Add(this.note3);
+            this.Controls.Add(this.note2);
+            this.Controls.Add(this.note1);
             this.Controls.Add(this.label19);
             this.Controls.Add(this.label17);
             this.Controls.Add(this.label15);
@@ -648,25 +578,15 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.suite);
             this.Controls.Add(this.rec10);
-            this.Controls.Add(this.note10);
             this.Controls.Add(this.rec9);
-            this.Controls.Add(this.note9);
             this.Controls.Add(this.rec8);
-            this.Controls.Add(this.note8);
             this.Controls.Add(this.rec7);
-            this.Controls.Add(this.note7);
             this.Controls.Add(this.rec6);
-            this.Controls.Add(this.note6);
             this.Controls.Add(this.rec5);
-            this.Controls.Add(this.note5);
             this.Controls.Add(this.rec4);
-            this.Controls.Add(this.note4);
             this.Controls.Add(this.rec3);
-            this.Controls.Add(this.note3);
             this.Controls.Add(this.rec2);
-            this.Controls.Add(this.note2);
             this.Controls.Add(this.rec1);
-            this.Controls.Add(this.note1);
             this.Controls.Add(this.label21);
             this.Controls.Add(this.play10);
             this.Controls.Add(this.label20);
@@ -720,26 +640,16 @@
         private System.Windows.Forms.Button play10;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.ComboBox note1;
         private System.Windows.Forms.Button rec1;
         private System.Windows.Forms.Button rec2;
-        private System.Windows.Forms.ComboBox note2;
         private System.Windows.Forms.Button rec3;
-        private System.Windows.Forms.ComboBox note3;
         private System.Windows.Forms.Button rec6;
-        private System.Windows.Forms.ComboBox note6;
         private System.Windows.Forms.Button rec5;
-        private System.Windows.Forms.ComboBox note5;
         private System.Windows.Forms.Button rec4;
-        private System.Windows.Forms.ComboBox note4;
         private System.Windows.Forms.Button rec10;
-        private System.Windows.Forms.ComboBox note10;
         private System.Windows.Forms.Button rec9;
-        private System.Windows.Forms.ComboBox note9;
         private System.Windows.Forms.Button rec8;
-        private System.Windows.Forms.ComboBox note8;
         private System.Windows.Forms.Button rec7;
-        private System.Windows.Forms.ComboBox note7;
         private System.Windows.Forms.Button suite;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label5;
@@ -750,6 +660,16 @@
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.TextBox note1;
+        private System.Windows.Forms.TextBox note2;
+        private System.Windows.Forms.TextBox note3;
+        private System.Windows.Forms.TextBox note4;
+        private System.Windows.Forms.TextBox note5;
+        private System.Windows.Forms.TextBox note6;
+        private System.Windows.Forms.TextBox note7;
+        private System.Windows.Forms.TextBox note8;
+        private System.Windows.Forms.TextBox note9;
+        private System.Windows.Forms.TextBox note10;
     }
 }
 

@@ -10,7 +10,7 @@ namespace ProjetGenetique
     public partial class ProjetGenetique : Form
     {
         private Population _population;
-        private MediaPlayer _player;
+        private MediaPlayer _mplayer;
         private Boolean _isPlaying;
 
         public ProjetGenetique()
@@ -22,8 +22,8 @@ namespace ProjetGenetique
             createMidis();
 
             // Initialisation du lecteur
-            _player = new MediaPlayer();
-            _player.MediaEnded += player_MediaEnded;
+            _mplayer = new MediaPlayer();
+            _mplayer.MediaEnded += mplayer_MediaEnded;
             _isPlaying = false;
         }
 
@@ -33,6 +33,7 @@ namespace ProjetGenetique
 
             if (!Directory.Exists("./midis")) {
                 Directory.CreateDirectory("./midis");
+                System.Threading.Thread.Sleep(1000);
             }
 
             for (int i = 0; i < _population.nbPerson; i++) {
@@ -60,8 +61,8 @@ namespace ProjetGenetique
 
                 ms.Close();
 
-                string strFileName   = "./midis/File" + i.ToString() + ".mid";
-                FileStream objWriter = File.Create(strFileName);
+                string file   = "./midis/Midi " + i.ToString() + ".mid";
+                FileStream objWriter = File.Create(file);
 
                 objWriter.Write(dst, 0, dst.Length);
                 objWriter.Close();
@@ -74,26 +75,27 @@ namespace ProjetGenetique
         {
             stopMusic();
 
-            var files = Directory.EnumerateFiles("./midis/", "File*.mid");
+            var files = Directory.EnumerateFiles("./midis/", "Midi *.mid");
 
             foreach (string file in files) {
                 File.Delete(file);
             }
 
             Directory.Delete("./midis");
+            System.Threading.Thread.Sleep(1000);
         }
 
         //close gently the mediaPlayer when it ends playing
-        void player_MediaEnded(object sender, EventArgs e)
+        void mplayer_MediaEnded(object sender, EventArgs e)
         {
             stopMusic();
         }
 
-        private void playMusic(string strFileName)
+        private void playMusic(string file)
         {
-            _player.Open(new Uri(strFileName, UriKind.Relative));
+            _mplayer.Open(new Uri(file, UriKind.Relative));
             _isPlaying = true;
-            _player.Play();
+            _mplayer.Play();
         }
 
         private void saveMusic(int id)
@@ -107,24 +109,79 @@ namespace ProjetGenetique
             dateFormated        = dateFormated.Replace(" ", "");
             dateFormated        = dateFormated.Replace(":", "");
 
-            File.Move("./midis/File" + id.ToString() + ".mid", "./saves/File" + dateFormated + ".mid");
+            File.Move("./midis/Midi " + id.ToString() + ".mid", "./saves/Midi" + dateFormated + ".mid");
         }
 
         private void stopMusic()
         {
             if (_isPlaying) {
-                _player.Stop();
-                _player.Close();
+                _mplayer.Stop();
+                _mplayer.Close();
                 _isPlaying = false;
             }
         }
 
         private void suite_Click(object sender, EventArgs e)
         {
-            //@todo get all the fitnesses
+            //get and set all the fitnesses
 
-            //@todo reinitialise the fitness of all the select inputs
+            if (note1.Text != "")
+            {
+                _population.persons[0].fitness = int.Parse(note1.Text);
+            }
 
+            if (note2.Text != "")
+            {
+                _population.persons[1].fitness = int.Parse(note2.Text);
+            }
+
+            if (note3.Text != "")
+            {
+                _population.persons[2].fitness = int.Parse(note3.Text);
+            }
+
+            if (note4.Text != "")
+            {
+                _population.persons[3].fitness = int.Parse(note4.Text);
+            }
+
+            if (note5.Text != "")
+            {
+                _population.persons[4].fitness = int.Parse(note5.Text);
+            }
+            if (note6.Text != "")
+            {
+                _population.persons[5].fitness = int.Parse(note6.Text);
+            }
+            if (note7.Text != "")
+            {
+                _population.persons[6].fitness = int.Parse(note7.Text);
+            }
+            if (note8.Text != "")
+            {
+                _population.persons[7].fitness = int.Parse(note8.Text);
+            }
+            if (note9.Text != "")
+            {
+                _population.persons[8].fitness = int.Parse(note9.Text);
+            }
+            if (note10.Text != "")
+            {
+                _population.persons[9].fitness = int.Parse(note10.Text);
+            }
+
+            //reinitialise the fitness of all the select inputs
+            note1.Text = "";
+            note2.Text = "";
+            note3.Text = "";
+            note4.Text = "";
+            note5.Text = "";
+            note6.Text = "";
+            note7.Text = "";
+            note8.Text = "";
+            note9.Text = "";
+            note10.Text = "";
+            
             //get a new generation
             _population.newGeneration();
             deleteMidis();
@@ -141,11 +198,14 @@ namespace ProjetGenetique
         
         private void play1_Click(object sender, EventArgs e)
         {
-            if (_isPlaying) {
+            if (_isPlaying)
+            {
+                play1.Text = "Lancer la mélodie";
                 stopMusic();
             } else {
                 //play number - 1
-                playMusic("File0.mid");
+                play1.Text = "Stopper la mélodie";
+                playMusic("midis/Midi 0.mid");
             }
         }
 
@@ -160,12 +220,14 @@ namespace ProjetGenetique
         {
             if (_isPlaying)
             {
+                play2.Text = "Lancer la mélodie";
                 stopMusic();
             }
             else
             {
                 //play number - 1
-                playMusic("File1.mid");
+                play2.Text = "Stopper la mélodie";
+                playMusic("midis/Midi 1.mid");
             }
         }
 
@@ -180,12 +242,14 @@ namespace ProjetGenetique
         {
             if (_isPlaying)
             {
+                play3.Text = "Lancer la mélodie";
                 stopMusic();
             }
             else
             {
                 //play number - 1
-                playMusic("File2.mid");
+                play3.Text = "Stopper la mélodie";
+                playMusic("midis/Midi 2.mid");
             }
         }
 
@@ -200,12 +264,14 @@ namespace ProjetGenetique
         {
             if (_isPlaying)
             {
+                play4.Text = "Lancer la mélodie";
                 stopMusic();
             }
             else
             {
                 //play number - 1
-                playMusic("File3.mid");
+                play4.Text = "Stopper la mélodie";
+                playMusic("midis/Midi 3.mid");
             }
         }
 
@@ -220,12 +286,14 @@ namespace ProjetGenetique
         {
             if (_isPlaying)
             {
+                play5.Text = "Lancer la mélodie";
                 stopMusic();
             }
             else
             {
                 //play number - 1
-                playMusic("File4.mid");
+                play5.Text = "Stopper la mélodie";
+                playMusic("midis/Midi 4.mid");
             }
         }
 
@@ -240,12 +308,14 @@ namespace ProjetGenetique
         {
             if (_isPlaying)
             {
+                play6.Text = "Lancer la mélodie";
                 stopMusic();
             }
             else
             {
                 //play number - 1
-                playMusic("File5.mid");
+                play6.Text = "Stopper la mélodie";
+                playMusic("midis/Midi 5.mid");
             }
         }
 
@@ -260,12 +330,14 @@ namespace ProjetGenetique
         {
             if (_isPlaying)
             {
+                play7.Text = "Lancer la mélodie";
                 stopMusic();
             }
             else
             {
                 //play number - 1
-                playMusic("File6.mid");
+                play7.Text = "Stopper la mélodie";
+                playMusic("midis/Midi 6.mid");
             }
         }
 
@@ -280,12 +352,14 @@ namespace ProjetGenetique
         {
             if (_isPlaying)
             {
+                play8.Text = "Lancer la mélodie";
                 stopMusic();
             }
             else
             {
                 //play number - 1
-                playMusic("File7.mid");
+                play8.Text = "Stopper la mélodie";
+                playMusic("midis/Midi 7.mid");
             }
         }
 
@@ -300,12 +374,14 @@ namespace ProjetGenetique
         {
             if (_isPlaying)
             {
+                play9.Text = "Lancer la mélodie";
                 stopMusic();
             }
             else
             {
                 //play number - 1
-                playMusic("File8.mid");
+                play9.Text = "Stopper la mélodie";
+                playMusic("midis/Midi 8.mid");
             }
         }
 
@@ -320,12 +396,14 @@ namespace ProjetGenetique
         {
             if (_isPlaying)
             {
+                play10.Text = "Lancer la mélodie";
                 stopMusic();
             }
             else
             {
                 //play number - 1
-                playMusic("File9.mid");
+                play10.Text = "Stopper la mélodie";
+                playMusic("midis/Midi 9.mid");
             }
         }
 

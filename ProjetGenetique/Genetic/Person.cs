@@ -15,18 +15,46 @@ namespace ProjetGenetique.Genetic
             _notes      = new int[nbNote];
         }
 
-        public int instrument { get; set; }
+        public int instrument
+        {
+            get
+            {
+                return _instrument;
+            }
+            set
+            {
+                _instrument = value;
+            }
+        }
 
-        public int[] notes { get; set; }
+        public int[] notes
+        {
+            get
+            {
+                return _notes;
+            }
+            set
+            {
+                _notes = value;
+            }
+        }
 
         //user rating
-        public int fitness { get; set; }
+        public int fitness
+        {
+            get
+            {
+                return _fitness;
+            }
+            set
+            {
+                _fitness = value;
+            }
+        }
 
         //generate a random song
-        public void generateRandomNotes()
+        public void generateRandomNotes(Random random)
         {
-            Random random = new Random();
-
             for (int i = 0; i < _notes.Length; i++){
                 _notes[i] = random.Next(0, 128);
             }
