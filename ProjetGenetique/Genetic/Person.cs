@@ -38,8 +38,7 @@ namespace ProjetGenetique.Genetic
                 _notes = value;
             }
         }
-
-        //user rating
+        
         public int fitness
         {
             get

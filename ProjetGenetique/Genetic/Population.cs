@@ -12,8 +12,7 @@ namespace ProjetGenetique.Genetic
         private double _crossoverRate = 0.6;
         private double _mutationRate;
         private Random random;
-
-        //get access to the person list from the UI
+        
         public Person[] persons
         {
             get
@@ -65,7 +64,7 @@ namespace ProjetGenetique.Genetic
         private Person cross(Person parent1, Person parent2)
         {
             int nbSeq        = (int)(_nbNote * new Random().NextDouble());
-            int[] aNote      = new int[_nbNote]; 
+            int[] aNote      = new int[_nbNote];
             Person newPerson = new Person(_nbNote);
             
             for (int i = 0; i < _nbNote; i++) {
@@ -89,15 +88,15 @@ namespace ProjetGenetique.Genetic
             return newPerson;
         }
 
-        private Person mutation(Person person1)
+        private Person mutation(Person person)
         {
             for (int i = 0; i < _nbNote; i++) {
                 if (random.NextDouble() <= _mutationRate) {
-                    person1.notes[i] = random.Next(0,127);
+                    person.notes[i] = random.Next(0,127);
                 }
             }
 
-            return person1;
+            return person;
         }
 
         public void newGeneration()

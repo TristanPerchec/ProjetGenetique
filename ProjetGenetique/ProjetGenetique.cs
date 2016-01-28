@@ -124,62 +124,56 @@ namespace ProjetGenetique
         private void suite_Click(object sender, EventArgs e)
         {
             //get and set all the fitnesses
-
-            if (note1.Text != "")
-            {
+            if (note1.Text != "") {
                 _population.persons[0].fitness = int.Parse(note1.Text);
             }
 
-            if (note2.Text != "")
-            {
+            if (note2.Text != "") {
                 _population.persons[1].fitness = int.Parse(note2.Text);
             }
 
-            if (note3.Text != "")
-            {
+            if (note3.Text != "") {
                 _population.persons[2].fitness = int.Parse(note3.Text);
             }
 
-            if (note4.Text != "")
-            {
+            if (note4.Text != "") {
                 _population.persons[3].fitness = int.Parse(note4.Text);
             }
 
-            if (note5.Text != "")
-            {
+            if (note5.Text != "") {
                 _population.persons[4].fitness = int.Parse(note5.Text);
             }
-            if (note6.Text != "")
-            {
+
+            if (note6.Text != "") {
                 _population.persons[5].fitness = int.Parse(note6.Text);
             }
-            if (note7.Text != "")
-            {
+
+            if (note7.Text != "") {
                 _population.persons[6].fitness = int.Parse(note7.Text);
             }
-            if (note8.Text != "")
-            {
+
+            if (note8.Text != "") {
                 _population.persons[7].fitness = int.Parse(note8.Text);
             }
-            if (note9.Text != "")
-            {
+
+            if (note9.Text != "") {
                 _population.persons[8].fitness = int.Parse(note9.Text);
             }
-            if (note10.Text != "")
-            {
+
+            if (note10.Text != "") {
                 _population.persons[9].fitness = int.Parse(note10.Text);
             }
 
             //reinitialise the fitness of all the select inputs
-            note1.Text = "";
-            note2.Text = "";
-            note3.Text = "";
-            note4.Text = "";
-            note5.Text = "";
-            note6.Text = "";
-            note7.Text = "";
-            note8.Text = "";
-            note9.Text = "";
+            note1.Text  = "";
+            note2.Text  = "";
+            note3.Text  = "";
+            note4.Text  = "";
+            note5.Text  = "";
+            note6.Text  = "";
+            note7.Text  = "";
+            note8.Text  = "";
+            note9.Text  = "";
             note10.Text = "";
             
             //get a new generation
@@ -191,19 +185,16 @@ namespace ProjetGenetique
         
         private void rec1_Click(object sender, EventArgs e)
         {
-            //rec number - 1
             saveMusic(0);
         }
 
         
         private void play1_Click(object sender, EventArgs e)
         {
-            if (_isPlaying)
-            {
+            if (_isPlaying) {
                 play1.Text = "Lancer la mélodie";
                 stopMusic();
             } else {
-                //play number - 1
                 play1.Text = "Stopper la mélodie";
                 playMusic("midis/Midi 0.mid");
             }
@@ -211,21 +202,16 @@ namespace ProjetGenetique
 
         private void rec2_Click(object sender, EventArgs e)
         {
-            //rec number - 1
             saveMusic(1);
         }
 
 
         private void play2_Click(object sender, EventArgs e)
         {
-            if (_isPlaying)
-            {
+            if (_isPlaying) {
                 play2.Text = "Lancer la mélodie";
                 stopMusic();
-            }
-            else
-            {
-                //play number - 1
+            } else {
                 play2.Text = "Stopper la mélodie";
                 playMusic("midis/Midi 1.mid");
             }
@@ -233,21 +219,16 @@ namespace ProjetGenetique
 
         private void rec3_Click(object sender, EventArgs e)
         {
-            //rec number - 1
             saveMusic(2);
         }
 
 
         private void play3_Click(object sender, EventArgs e)
         {
-            if (_isPlaying)
-            {
+            if (_isPlaying) {
                 play3.Text = "Lancer la mélodie";
                 stopMusic();
-            }
-            else
-            {
-                //play number - 1
+            } else {
                 play3.Text = "Stopper la mélodie";
                 playMusic("midis/Midi 2.mid");
             }
@@ -255,21 +236,16 @@ namespace ProjetGenetique
 
         private void rec4_Click(object sender, EventArgs e)
         {
-            //rec number - 1
             saveMusic(3);
         }
 
 
         private void play4_Click(object sender, EventArgs e)
         {
-            if (_isPlaying)
-            {
+            if (_isPlaying) {
                 play4.Text = "Lancer la mélodie";
                 stopMusic();
-            }
-            else
-            {
-                //play number - 1
+            } else {
                 play4.Text = "Stopper la mélodie";
                 playMusic("midis/Midi 3.mid");
             }
@@ -277,21 +253,16 @@ namespace ProjetGenetique
 
         private void rec5_Click(object sender, EventArgs e)
         {
-            //rec number - 1
             saveMusic(4);
         }
 
 
         private void play5_Click(object sender, EventArgs e)
         {
-            if (_isPlaying)
-            {
+            if (_isPlaying) {
                 play5.Text = "Lancer la mélodie";
                 stopMusic();
-            }
-            else
-            {
-                //play number - 1
+            } else {
                 play5.Text = "Stopper la mélodie";
                 playMusic("midis/Midi 4.mid");
             }
@@ -299,21 +270,16 @@ namespace ProjetGenetique
 
         private void rec6_Click(object sender, EventArgs e)
         {
-            //rec number - 1
             saveMusic(5);
         }
 
 
         private void play6_Click(object sender, EventArgs e)
         {
-            if (_isPlaying)
-            {
+            if (_isPlaying) {
                 play6.Text = "Lancer la mélodie";
                 stopMusic();
-            }
-            else
-            {
-                //play number - 1
+            } else {
                 play6.Text = "Stopper la mélodie";
                 playMusic("midis/Midi 5.mid");
             }
@@ -321,7 +287,6 @@ namespace ProjetGenetique
 
         private void rec7_Click(object sender, EventArgs e)
         {
-            //rec number - 1
             saveMusic(6);
         }
 
@@ -332,10 +297,7 @@ namespace ProjetGenetique
             {
                 play7.Text = "Lancer la mélodie";
                 stopMusic();
-            }
-            else
-            {
-                //play number - 1
+            } else {
                 play7.Text = "Stopper la mélodie";
                 playMusic("midis/Midi 6.mid");
             }
@@ -343,21 +305,16 @@ namespace ProjetGenetique
 
         private void rec8_Click(object sender, EventArgs e)
         {
-            //rec number - 1
             saveMusic(7);
         }
 
 
         private void play8_Click(object sender, EventArgs e)
         {
-            if (_isPlaying)
-            {
+            if (_isPlaying) {
                 play8.Text = "Lancer la mélodie";
                 stopMusic();
-            }
-            else
-            {
-                //play number - 1
+            } else {
                 play8.Text = "Stopper la mélodie";
                 playMusic("midis/Midi 7.mid");
             }
@@ -365,20 +322,16 @@ namespace ProjetGenetique
 
         private void rec9_Click(object sender, EventArgs e)
         {
-            //rec number - 1
             saveMusic(8);
         }
 
 
         private void play9_Click(object sender, EventArgs e)
         {
-            if (_isPlaying)
-            {
+            if (_isPlaying) {
                 play9.Text = "Lancer la mélodie";
                 stopMusic();
-            }
-            else
-            {
+            } else {
                 //play number - 1
                 play9.Text = "Stopper la mélodie";
                 playMusic("midis/Midi 8.mid");
@@ -387,21 +340,16 @@ namespace ProjetGenetique
 
         private void rec10_Click(object sender, EventArgs e)
         {
-            //rec number - 1
             saveMusic(9);
         }
 
 
         private void play10_Click(object sender, EventArgs e)
         {
-            if (_isPlaying)
-            {
+            if (_isPlaying) {
                 play10.Text = "Lancer la mélodie";
                 stopMusic();
-            }
-            else
-            {
-                //play number - 1
+            } else {
                 play10.Text = "Stopper la mélodie";
                 playMusic("midis/Midi 9.mid");
             }
